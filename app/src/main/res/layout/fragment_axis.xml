@@ -1,0 +1,424 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/motors"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="5dp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_column="0"
+                    android:id="@+id/homeX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home X"
+                    android:longClickable="true" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/positionX"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_column="1" />
+
+                <Button
+                    android:text="X-"
+                    android:id="@+id/xL"
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X+"
+                    android:id="@+id/xP"
+                    android:layout_column="3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Y"
+                    android:id="@+id/homeY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/positionY"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_column="1" />
+
+                <Button
+                    android:text="Y-"
+                    android:id="@+id/yL"
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y+"
+                    android:id="@+id/yP"
+                    android:layout_column="3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Z"
+                    android:id="@+id/homeZ" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/positionZ"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z-"
+                    android:id="@+id/zL"
+                    android:layout_column="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z+"
+                    android:id="@+id/zP"
+                    android:layout_column="3" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_column="0"
+                    android:id="@+id/homeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home All" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="stop"
+                    android:id="@+id/stop"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fan Off"
+                    android:id="@+id/fanOff" />
+
+                <Button
+                    android:layout_column="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fan On"
+                    android:id="@+id/fanOn" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_column="0"
+                    android:id="@+id/selectE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T0"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/positionE"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-"
+                    android:id="@+id/eL" />
+
+                <Button
+                    android:layout_column="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E+"
+                    android:id="@+id/eP" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/steps"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_column="0" />
+
+                <SeekBar
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stepsSeekbar"
+                    android:indeterminate="false"
+                    android:longClickable="false"
+                    android:layout_span="2"
+                    style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:max="100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0.1 mm"
+                    android:id="@+id/stepsText"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_column="3" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/tempertures"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bed : "
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.0"
+                android:id="@+id/bedCurrent"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" / "
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.0"
+                android:id="@+id/bedSet"
+                android:layout_gravity="center" />
+
+            <SeekBar
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:id="@+id/bedSeekbar"
+                android:indeterminate="false"
+                android:longClickable="false"
+                android:max="4000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:minWidth="150dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="  T0 : "
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.0"
+                android:id="@+id/extCurrent"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" / "
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.0"
+                android:id="@+id/extSet"
+                android:layout_gravity="center" />
+
+            <SeekBar
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/extSeekbar"
+                android:indeterminate="false"
+                android:longClickable="false"
+                android:max="4000"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:minWidth="150dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/spindleOrLaser"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="5dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/counterClockwise"
+            android:id="@+id/ccBox"
+            android:layout_gravity="center"
+            android:checked="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:baselineAligned="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/RPMOrIntensity"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="5"
+                android:id="@+id/laserPower"
+                android:enabled="true"
+                android:layout_gravity="center"
+                android:text="255" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off"
+                android:id="@+id/laserOff"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On"
+                android:id="@+id/laserOn"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

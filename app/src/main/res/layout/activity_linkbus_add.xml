@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/profilNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profil_name"
+        android:textSize="10pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/profilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/profilNameLabel"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/infoTxtCredits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:gravity="center"
+        android:text="@string/see_devmel_url"
+        android:textSize="8pt"
+        android:layout_below="@+id/profilName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_lb_unit_code"
+        android:layout_below="@+id/infoTxtCredits"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/lbLocalIPLabel"
+        android:gravity="center"
+        android:text="- Local IP -"
+        android:textColor="#8c8c8c"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/scan"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="27dp" />
+
+    <EditText
+        android:id="@+id/lbLocalIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbLocalIPLabel"
+        android:ems="10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/lbLocalIP"
+        android:id="@+id/lbKeyLabel"
+        android:text="- Password -"
+        android:gravity="center"
+        android:textColor="#8c8c8c"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lbPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/lbKeyLabel"
+        android:layout_alignParentLeft="true" />
+
+
+    <Button
+        android:id="@+id/validate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_below="@+id/lbPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@mipmap/lb_left"
+        android:layout_below="@+id/validate"
+    />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        <RadioGroup
+        android:id="@+id/deviceSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+            
+            <RadioButton
+                android:id="@+id/linkbusChecked"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textSize="25sp"
+                android:text="LinkBus" />
+
+            <ListView
+                android:id="@+id/linkbusDevices"
+                android:layout_margin="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+                
+			<Button
+			    android:id="@+id/linkbusAdd"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/add"
+				android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/usbChecked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textSize="25sp"
+                android:text="USB" />
+
+            <ListView
+                android:id="@+id/usbDevices"
+                android:layout_margin="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+			<Button
+			    android:id="@+id/usbEnable"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/enable_root_only"
+				android:visibility="gone" />
+			
+            <RadioButton
+                android:id="@+id/bluetoothChecked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textSize="25sp"
+                android:text="Bluetooth" />
+
+            <ListView
+                android:id="@+id/bluetoothDevices"
+                android:layout_margin="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+			<Button
+			    android:id="@+id/bluetoothEnable"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/enable"
+				android:visibility="gone" />
+            
+        </RadioGroup>
+        </RelativeLayout>
+
+</ScrollView>

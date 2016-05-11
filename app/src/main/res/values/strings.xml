@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Reprap Control</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_port_select">Port Selection</string>
+    <string name="title_activity_linkbus_add">Add a LinkBus Connection</string>
+    <string name="title_section1">Machine</string>
+    <string name="title_section2">Axis</string>
+    <string name="title_section3">SD Card</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="apply">Apply</string>
+    <string name="profil_name">Profil Name</string>
+    <string name="addLB">Add a LinkBus</string>
+    <string name="selectLB">Select a LinkBus</string>
+    <string name="errorUnknown">An unknown error occurred...</string>
+    <string name="errorNameExists">This name already exist...</string>
+    <string name="errorNameInvalid">This name is invalid...</string>
+    <string name="errorIPInvalid">This IP address is invalid...</string>
+    <string name="errorScan">Scan Failed...</string>
+    <string name="okScan">Scan Complete...</string>
+    <string name="port_selected_none">No port selected</string>
+    <string name="port_select">Port select</string>
+    <string name="port_show">Port : </string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting...</string>
+    <string name="device_not_found">Device not found, please check your connection...</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="bt_not_found">Bluetooth not supported</string>
+    <string name="bt_enable">Bluetooth Enable...</string>
+    <string name="usb_otg_enable">USB OTG Enable (restart required)...</string>
+    <string name="scan_lb_unit_code">Scan QRCode below the LinkBus unit</string>
+    <string name="see_devmel_url">\nSee http://www.devmel.com/linkbus\n</string>
+    <string name="add">Add</string>
+    <string name="usb_not_found">USB OTG not supported</string>
+    <string name="enable_root_only">Enable (root only)</string>
+    <string name="enable">Enable</string>
+    <string name="machineIsBusy">Machine is busy, please wait or reset...</string>
+    <string name="machineConfig">Machine Configuration</string>
+    <string name="swResetM999">Software Reset (M999)</string>
+    <string name="baud_rate" translatable="false">Baud Rate</string>
+    <string name="databits" translatable="false">Data Bits</string>
+    <string name="stopbits" translatable="false">Stop Bits</string>
+    <string name="parity" translatable="false">Parity</string>
+    <string name="none" translatable="false">none</string>
+    <string name="odd" translatable="false">odd</string>
+    <string name="even" translatable="false">even</string>
+    <string name="linkbus" translatable="false">LinkBus</string>
+    <string name="reset" translatable="false">Reset</string>
+    <string name="vtg" translatable="false">VTG</string>
+    <string name="motors">Motors</string>
+    <string name="steps">Steps</string>
+    <string name="tempertures">Temperatures</string>
+    <string name="spindleOrLaser">Spindle or Laser</string>
+    <string name="counterClockwise">Counter-Clockwise</string>
+    <string name="RPMOrIntensity">RPM or Intensity</string>
+    <string name="reinitSDCard">Re-Initialize SDCard</string>
+    <string name="status">Status</string>
+    <string name="notSDPrinting">Not SD printing</string>
+    <string name="pause">Pause</string>
+    <string name="startResume">Start / Resume</string>
+    <string name="time">Time</string>
+    <string name="rootFiles">Root Files</string>
+</resources>
